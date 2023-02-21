@@ -6,3 +6,4 @@ django-cors-headers==3.13.0
 django-filter==22.1
 python-dotenv==0.21.1
 mysqlclient==2.1.1
+django-heroku==0.3.1
