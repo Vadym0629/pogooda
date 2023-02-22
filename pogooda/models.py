@@ -12,7 +12,7 @@ class Weather(models.Model):
     feels_like = models.IntegerField()
     uv_index = models.IntegerField()
     pollution = models.IntegerField()
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank="True")
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank="True", default='default.jpg')
     day = models.ForeignKey("Day", on_delete=models.CASCADE, related_name='weather')
     city = models.ForeignKey("City", on_delete=models.CASCADE, related_name='weather')
 
